@@ -12,3 +12,6 @@
 /captures
 .externalNativeBuild
 .cxx
+app/naming convection.txt
+app/naming convection.txt
+*.txt
