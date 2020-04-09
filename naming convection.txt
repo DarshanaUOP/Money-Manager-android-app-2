@@ -1,0 +1,4 @@
+layouts and Classes:
+ * adapters : starts with "adp_"
+ * normal   : starts with ClassName
+
