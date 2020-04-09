@@ -3,6 +3,7 @@ package com.example.darshana.moneymanager;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -21,7 +22,14 @@ public class MainActivity extends AppCompatActivity {
         welcome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"You Clicked",Toast.LENGTH_LONG).show();
+                try{
+                    Intent selectOrg = new Intent(MainActivity.this,Organization.class);
+                    startActivity(selectOrg);
+
+                }catch (Exception e){
+                    Toast.makeText(MainActivity.this,"ERROR : " + e.getCause() + '\n'+"Massage + " + e.getMessage(),Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
     }
