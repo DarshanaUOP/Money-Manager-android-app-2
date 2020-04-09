@@ -2,6 +2,7 @@ package com.example.darshana.moneymanager;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,9 +23,13 @@ public class Organization extends AppCompatActivity {
         btnAddNewOrg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                showMassages("FAB Clicked");
             }
         });
+    }
+
+    void showMassages(String massage){
+        Toast.makeText(Organization.this,massage,Toast.LENGTH_SHORT).show();
     }
 
 }
