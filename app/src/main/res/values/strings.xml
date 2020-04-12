@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Money Manager</string>
     <string name="welcome">Welcome</string>
+    <string name="description">Description</string>
+    <string name="details">Details</string>
+    <string name="addNewOrg">Add new Organization</string>
 </resources>

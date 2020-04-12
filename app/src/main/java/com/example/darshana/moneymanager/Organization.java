@@ -1,5 +1,6 @@
 package com.example.darshana.moneymanager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -23,9 +24,16 @@ public class Organization extends AppCompatActivity {
         btnAddNewOrg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showMassages("FAB Clicked");
+//                showMassages("Loading new Intent");
+                try{
+                    Intent newOrg = new Intent(Organization.this,NewOrganization.class);
+                    startActivity(newOrg);
+                }catch (Exception e){
+                    showMassages("Error : " +e.getMessage());
+                }
             }
         });
+
     }
 
     void showMassages(String massage){
