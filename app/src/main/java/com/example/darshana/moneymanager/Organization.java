@@ -3,6 +3,7 @@ package com.example.darshana.moneymanager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -48,11 +49,20 @@ public class Organization extends AppCompatActivity {
 
         try {
             Organization.this.orgList.add(new EntityOrganization(R.mipmap.ic_launcher_round,"gotoZero","ANGO"));
-            Organization.this.orgList.add(new EntityOrganization(R.mipmap.ic_launcher_round,"gotoZero","ANGO"));
-            Organization.this.orgList.add(new EntityOrganization(R.mipmap.ic_launcher_round,"gotoZero","ANGO"));
+            Organization.this.orgList.add(new EntityOrganization(R.mipmap.ic_launcher_round,"PLC","ANGO"));
+            Organization.this.orgList.add(new EntityOrganization(R.mipmap.ic_launcher_round,"SL","ANGO"));
+            Organization.this.orgList.add(new EntityOrganization(R.mipmap.ic_launcher_round,"G0","ANGO"));
+            Organization.this.orgList.add(new EntityOrganization(R.mipmap.ic_launcher_round,"java","ANGO"));
         }catch (Exception e){
             showMassages("Error on loading : " + e.getMessage());
         }
+
+        this.listViewOrg.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                showMassages("Title : " + orgList.get(position).getOrgName());
+            }
+        });
 
         Organization.this.listViewOrg.setAdapter(new AdapterOrganization(Organization.this,this.orgList));
 
