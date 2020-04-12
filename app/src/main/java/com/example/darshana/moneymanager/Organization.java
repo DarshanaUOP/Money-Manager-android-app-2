@@ -13,6 +13,7 @@ public class Organization extends AppCompatActivity {
 
     FloatingActionButton btnAddNewOrg;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
