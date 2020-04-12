@@ -19,17 +19,17 @@
         </activity>
 
         <activity
+            android:name=".Organization"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/selectOrg">
+        </activity>
+
+        <activity
             android:name=".NewOrganization"
             android:parentActivityName=".Organization"
             android:label="@string/addNewOrg"
             >
         </activity>
-        <activity
-            android:name=".Organization"
-            android:parentActivityName=".MainActivity" >
-        </activity>
-
-
 
     </application>
 

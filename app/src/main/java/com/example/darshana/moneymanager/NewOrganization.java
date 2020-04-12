@@ -11,6 +11,6 @@ public class NewOrganization extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Toast.makeText(NewOrganization.this,"Loading ",Toast.LENGTH_SHORT).show();
-        setContentView(R.layout.adp_new_org);
+        setContentView(R.layout.new_org);
     }
 }
