@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -19,15 +20,29 @@
         android:layout_row="1"
         android:layout_column="0"
         android:layout_weight="1"
-        android:text="Nothing to show"
+        android:text="TextView"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/orgDesc"
         android:layout_width="match_parent"
-        android:layout_height="204dp"
+        android:layout_height="71dp"
         android:layout_row="2"
         android:layout_column="0"
-        android:text="" />
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/orgSeeMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:textAlignment="viewEnd"
+        android:text="@string/seeMore"
+        android:gravity="end">
+
+    </TextView>
+
+
 </GridLayout>
