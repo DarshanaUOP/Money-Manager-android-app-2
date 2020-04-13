@@ -6,4 +6,13 @@
     <string name="addNewOrg">Add new Organization</string>
     <string name="selectOrg">Select organization</string>
     <string name="seeMore">Click to See more </string>
+
+    <string name="organizationName">Organization Name</string>
+    <string name="publicEmail">Organization Email</string>
+    <string name="publicPhone">Organization Phone</string>
+    <string name="orgAddress">Organization Address</string>
+    <string name="save">Save</string>
+
+
+
 </resources>

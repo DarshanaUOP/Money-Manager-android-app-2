@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/newOrgPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="413dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <ImageButton
+        android:id="@+id/addNewOrgPhoto"
+        android:layout_width="48dp"
+        android:layout_height="58dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity="top|end"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:paddingTop="100dp"
+        android:paddingRight="100dp"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <EditText
+        android:id="@+id/addNewOrgName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:ems="10"
+        android:hint="@string/organizationName"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/addNewOrgEmail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:ems="10"
+        android:hint="@string/publicEmail"
+        android:inputType="textEmailAddress"
+        android:autofillHints="" />
+
+    <ImageButton
+        android:id="@+id/addNewOrgEmailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        android:layout_gravity="end"/>
+
+    <EditText
+        android:id="@+id/addNewOrgPhone"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:ems="10"
+        android:hint="@string/publicPhone"
+        android:inputType="phone" />
+
+    <ImageButton
+        android:id="@+id/addNewOrgPhoneButton"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_gravity="end"
+        app:srcCompat="@android:drawable/stat_sys_speakerphone" />
+
+    <EditText
+        android:id="@+id/addNewOrgAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:ems="10"
+        android:hint="@string/orgAddress"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:id="@+id/addNewOrgSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_gravity="end"
+        tools:text="@string/save" />
+
+    <EditText
+        android:id="@+id/addNewOrgDescription"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/description"
+        android:inputType="textMultiLine" />
+
+
+</GridLayout>
