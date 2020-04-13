@@ -4,12 +4,17 @@ public class EntityNewOrganization {
     int photo;
     String orgName,orgAddress,orgEmail,orgPhone;
 
+
     public EntityNewOrganization() {
         this.photo = photo;
         this.orgName = orgName;
         this.orgAddress = orgAddress;
         this.orgEmail = orgEmail;
         this.orgPhone = orgPhone;
+    }
+
+    public EntityNewOrganization(int photo) {
+        this.photo = photo;
     }
 
     public EntityNewOrganization(int photo, String orgName, String orgAddress, String orgEmail, String orgPhone) {
