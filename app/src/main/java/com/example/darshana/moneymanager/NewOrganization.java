@@ -30,7 +30,7 @@ public class NewOrganization extends AppCompatActivity {
         listViewNewOrg = (ListView) findViewById(R.id.listViewNewOrg);
         entityNewOrganizationList = new ArrayList<>();
 
-        NewOrganization.this.entityNewOrganizationList.add(new EntityNewOrganization());
+        NewOrganization.this.entityNewOrganizationList.add(new EntityNewOrganization(R.mipmap.ic_launcher_round));
 
         listViewNewOrg.setAdapter(new AdapterNewOrganization(NewOrganization.this,this.entityNewOrganizationList));
     }
